@@ -1,0 +1,97 @@
+{
+  "lords": [{
+      "name": "Alba Lamas",
+      "github": "https://github.com/Doasy",
+      "linkedin": "https://www.linkedin.com/in/alba-lamas/",
+      "status": "Presidenta",
+      "image": "https://avatars0.githubusercontent.com/u/16958917?s=400&v=4"
+    },
+    {
+      "name": "Marc Ribalta",
+      "github": "https://github.com/mrg20",
+      "linkedin": "https://www.linkedin.com/in/marc-ribalta-gene-240a2b140/",
+      "status": "Tesorero",
+      "image": "https://avatars2.githubusercontent.com/u/17416452?s=400&v=4"
+    },
+    {
+      "name": "Paula Gallucci",
+      "github": "https://github.com/latra",
+      "linkedin": "https://www.linkedin.com/in/paula-gallucci-zurita-6660b9176/",
+      "status": "Secretaria",
+      "image": "https://avatars3.githubusercontent.com/u/17687435?s=400&v=4"
+    }
+  ],
+  "members": [{
+      "name": "Marta Albets",
+      "github": "https://github.com/Marta99",
+      "linkedin": "",
+      "image": "https://avatars2.githubusercontent.com/u/44064153?s=400&v=4"
+    },
+    {
+      "name": "Mark Ankaro",
+      "github": "https://github.com/markankaro",
+      "linkedin": "https://www.linkedin.com/in/marcmelis/",
+      "image": "https://avatars2.githubusercontent.com/u/28937427?s=400&v=4"
+    },
+    {
+      "name": "Guillem Orellana",
+      "github": "https://github.com/Guillem96",
+      "linkedin": "https://www.linkedin.com/in/guillem-orellana-trullols-72a917148/",
+      "image": "https://avatars3.githubusercontent.com/u/21279306?s=460&v=4"
+    },
+    {
+      "name": "Elena Barrachina",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/elena-barrachina-i-ribes-33a047176/",
+      "image": "http://tiny.cc/wgsn1y"
+    },
+    {
+      "name": "Albert Sala",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/asm12/",
+      "image": "http://tiny.cc/ghsn1y"
+    },
+    {
+      "name": "Jordi Onrubia",
+      "github": "https://github.com/JordiROP",
+      "linkedin": "https://www.linkedin.com/in/jordirop/",
+      "image": "https://avatars0.githubusercontent.com/u/17128072?s=400&v=4"
+    },
+    {
+      "name": "Oscar López",
+      "github": "https://github.com/Korakk",
+      "linkedin": "",
+      "image": "https://avatars0.githubusercontent.com/u/33825619?s=400&v=4"
+    },
+    {
+      "name": "Marcel Ortiz",
+      "github": "https://github.com/Mrcel97",
+      "linkedin": "https://www.linkedin.com/in/marcel-ortiz-sanchez/",
+      "image": "https://avatars3.githubusercontent.com/u/33465043?s=460&v=4"
+    },
+    {
+      "name": "Albert Merino",
+      "github": "https://github.com/amerinoo",
+      "linkedin": "https://www.linkedin.com/in/amerinoo/",
+      "image": "https://avatars1.githubusercontent.com/u/11027833?s=400&v=4"
+    },
+    {
+      "name": "Humbert Valles",
+      "github": "https://github.com/HumbertValles",
+      "linkedin": "https://www.linkedin.com/in/humbert-vall%C3%A9s-teixid%C3%B3-13055b139/",
+      "image": "https://avatars3.githubusercontent.com/u/25740901?s=400&v=4"
+    },
+    {
+      "name": "David Sarrat",
+      "github": "https://github.com/davidsarrat",
+      "linkedin": "https://www.linkedin.com/in/davidsarrat/",
+      "image": "https://avatars0.githubusercontent.com/u/12006274?s=400&v=4"
+    },
+    {
+      "name": "Josep Costa",
+      "github": "https://github.com/JosepAntoni",
+      "linkedin": "",
+      "image": "https://avatars2.githubusercontent.com/u/36297018?s=400&v=4"
+    }
+  ]
+}

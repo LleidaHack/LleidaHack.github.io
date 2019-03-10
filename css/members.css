@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+.members h1, .members h2, .members h3, .members h4, .members h5, .members h6 {
+  margin: 0 0 20px 0;
+  text-transform: none;
+  color: rgba(255, 136, 0, 1);
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.members a:link, .members a:active, .members a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+.members a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.members .gray {
+  color: #a5a5a5;
+}
+.members .team {
+  margin: 40px;
+}
+.members .team-member {
+  margin: 15px 0;
+  padding: 0;
+}
+.members .team-member figure {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.members .team-member figure img {
+  min-width: 100%;
+}
+.members .team-member figcaption p {
+  font-size: 16px;
+}
+.members .team-member figcaption ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.members .team-member figcaption ul {
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.members .team-member figcaption ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.members .team-member h4 {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.members .team-member figcaption {
+  padding: 50px;
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 996;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.members .team-member figure:hover figcaption {
+  visibility: visible;
+  color: #fff;
+  background: rgba(255, 136, 0, 0.9);
+  /* Primary color, can be changed via colors.css */
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.members .team-member figure:hover figcaption ul li a:hover {
+  color: rgba(49, 49, 49, .97);
+}
+.members .team-member figure img {
+  -webkit-transform: scale(1) rotate(0) translateY(0);
+  -moz-transform: scale(1) rotate(0) translateY(0);
+  -o-transform: scale(1) rotate(0) translateY(0);
+  -ms-transform: scale(1) rotate(0) translateY(0);
+  transform: scale(1) rotate(0) translateY(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.members .team-member figure:hover img {
+  -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+  transform: scale(1.1) rotate(1deg) translateY(12px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
