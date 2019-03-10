@@ -11,3 +11,38 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.wrapper {
+  padding-top: 4em;
+}
+
+.events-scrolling {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.events-scrolling .card {
+  flex: 0 0 auto;
+  margin: 1em;
+}
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+ h1,  h2,  h3,  h4,  h5,  h6 {
+  margin: 0 0 20px 0;
+  text-transform: none;
+  color: rgba(255, 136, 0, 1);
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.gray {
+  color: #a5a5a5;
+}

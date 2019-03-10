@@ -6,4 +6,7 @@ $(document).ready(function() {
   $("#members").load("../home/members.html"); 
   appendMembers();
 
+  // Load and append events
+  $("#events").load("../home/events.html"); 
+  appendEvents();
 });

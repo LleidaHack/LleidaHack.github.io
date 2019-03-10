@@ -23,11 +23,17 @@ function memberToHtml(member, isLord=false) {
     </div>`;
 }
 
+/**
+ * Loads members from data/members.json, convert them into html format 
+ * and append them to the document
+ */
 function appendMembers() {
   $.getJSON("../data/members.json", function(members) {
+    // Convert lords and simple members to HTML
     const lordHtml = members.lords.map(m => memberToHtml(m, true));
     const membersHtml = members.members.map(memberToHtml);
 
+    // Append members to document
     lordHtml.concat(membersHtml).forEach(element => {
       $(".members-container").append(element);
     });
