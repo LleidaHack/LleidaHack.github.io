@@ -1,0 +1,20 @@
+.events-scrolling {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.events-scrolling .card {
+  flex: 0 0 auto;
+  margin: 1em;
+}
+
+.card img {
+  width: 15em !important;
+}
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}

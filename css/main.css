@@ -1,9 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Set a specific height */
-  height: 500px;
+  background-image: url("/img/banner.png");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -13,27 +10,15 @@
 }
 
 .wrapper {
-  padding-top: 4em;
+  padding-top: 3em;
 }
 
-.events-scrolling {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.events-scrolling .card {
-  flex: 0 0 auto;
-  margin: 1em;
-}
-
-p {
-  word-break: break-all;
-  white-space: normal;
-}
-
- h1,  h2,  h3,  h4,  h5,  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 20px 0;
   text-transform: none;
   color: rgba(255, 136, 0, 1);
@@ -45,4 +30,22 @@ p {
 
 .gray {
   color: #a5a5a5;
+}
+
+.banner-img {
+  margin: auto;
+  display: block;
+  size: 3em;
+  padding-top: 2em;
+}
+
+.title {
+  font-size: 5em;
+}
+
+.description {
+  text-align: center;
+  margin: auto;
+  padding: 1em 0em; 
+  width: 80%;
 }

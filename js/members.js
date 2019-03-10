@@ -8,7 +8,7 @@ function memberToHtml(member, isLord=false) {
     <div class="p-4 col-lg-4 col-md-4 col-sm-12">
     <div class="team-member">
       <figure>
-        <img src="${member.image}" width="30" class="img-responsive">
+        <img src="${member.image}" width="20" class="img-responsive">
         <figcaption>
           <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.</p>
           <ul>
