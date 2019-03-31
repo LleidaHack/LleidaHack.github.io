@@ -52,16 +52,16 @@
 
 .members .team-member figcaption ul li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
 }
 
 .members .team-member h4 {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   padding: 0;
 }
 
 .members .team-member figcaption {
-  padding: 50px;
+  padding: 25px;
   color: transparent;
   background-color: transparent;
   position: absolute;
