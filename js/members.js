@@ -12,7 +12,7 @@ function memberToHtml(member) {
       <figure>
         <img src="${member.image}" width="20" class="img-responsive">
         <figcaption>
-          <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.</p>
+          <p>${member.quote}</p>
           <ul>
             <li><a href="${member.github}"><i class="fab fa-github-alt"></i></a></li>
             <li><a href="${member.linkedin}"><i class="fab fa-linkedin-in"></i></i></a></li>
