@@ -1,1 +1,3 @@
 - Logo with transparency(large and small)
+- Frase per cada membre de LleidaHack
+- Organigrama

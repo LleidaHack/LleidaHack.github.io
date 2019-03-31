@@ -10,7 +10,8 @@ function eventToHtml(event) {
                   "octubre"," noviembre", "diciembre"];
 
   // Prettify event date 
-  const date = new Date(event.date);  
+  const splitDate = event.date.split("-")
+  const date = new Date(splitDate[2], splitDate[1] - 1, splitDate[0]);  
   const dateStr = days[date.getDay()] + ", " 
                   + date.getDate() + " de " + months[date.getMonth()] + " " + date.getFullYear();
 

@@ -32,15 +32,15 @@ function memberToHtml(member) {
  */
 function lordToHtml(lord) {
     return `
-    <div class="p-4 col-lg-4 col-md-4 col-sm-12">
+    <div class="lord p-4 col-lg-4 col-md-4 col-sm-12">
     <div class="team-member">
       <figure>
         <img src="${lord.image}" width="20" class="img-responsive">
         <figcaption>
-          <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.</p>
+          <p>${lord.quote}</p>
           <ul>
-            <li><a href="${lord.github}"><i class="fab fa-github-alt"></i></a></li>
-            <li><a href="${lord.linkedin}"><i class="fab fa-linkedin-in"></i></i></a></li>
+            <li class="p-3"><a href="${lord.github}"><i class="fab fa-github-alt fa-2x"></i></a></li>
+            <li class="p-3><a href="${lord.linkedin}"><i class="fab fa-linkedin-in fa-2x"></i></i></a></li>
           </ul>
         </figcaption>
       </figure>

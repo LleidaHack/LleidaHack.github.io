@@ -1,0 +1,49 @@
+.social-icons {
+    text-align: center;
+    padding-top: 2em; 
+}
+
+.square {
+  height: 60px;
+  width: 60px;
+  border: 1px dashed rgb(17, 17, 17);
+  margin: 0 0 0 55px;
+  
+  /*   padding: 1px; resize squares */
+  background-color: rgba(192, 192, 192, 0.2);
+  display: inline-block;
+  transform: rotateZ(44deg);
+}
+
+.square:hover {
+  background-color: rgba(255, 173, 65, 0.37);
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.square .icons {
+  position: absolute;
+  transform: rotateZ(-44deg);
+  margin: 20px 0 0px 21px;
+}
+
+#about-us .fa-facebook-f,
+#about-us .fa-twitter,
+#about-us .fa-instagram {
+  color: #ff8800;
+  font-size: 1.6em;
+  font-weight: 400;
+  transition: color .5s;
+}
+
+.square:hover .fa-facebook-f {
+  color: rgba(59, 89, 152, 1) !important;
+}
+
+.square:hover .fa-twitter {
+  color: rgba(27, 182, 239, 1) !important;
+}
+
+.square:hover .fa-instagram {
+  color: rgb(122, 50, 145) !important;
+}

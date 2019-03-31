@@ -13,7 +13,9 @@
   padding-top: 3em;
 }
 
-html{scroll-behavior:smooth}
+html {
+  scroll-behavior: smooth
+}
 
 h1,
 h2,
@@ -34,11 +36,28 @@ h6 {
   color: #a5a5a5;
 }
 
+#carousel-banner {
+  position: relative;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  position: relative;
+  transform: translateY(-20%);
+}
+
+
 .banner-img {
-  margin: auto;
-  display: block;
-  size: 3em;
+  width: 20em;
   padding-top: 2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
 }
 
 .title {
@@ -48,6 +67,8 @@ h6 {
 .description {
   text-align: center;
   margin: auto;
-  padding: 1em 0em; 
+  padding: 1em 0em;
   width: 80%;
+  color: rgb(66, 66, 66);
+  font-size: 1.3em;
 }

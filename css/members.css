@@ -60,6 +60,10 @@
   padding: 0;
 }
 
+.members .lord figcaption {
+    padding: 50px !important;
+}
+
 .members .team-member figcaption {
   padding: 25px;
   color: transparent;
