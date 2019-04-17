@@ -35,9 +35,9 @@ function eventToHtml(event) {
 }
 
 /**
- * Loads events from data/events.json and append all events to document 
+ * Loads events from data/events.json and append all events to document (main page!)
  */
-function appendEvents() {
+function appendEventsMain() {
   $.getJSON("../data/events.json", function (events) {
     // Convert events to HTML
     const eventsHtml = events.map(eventToHtml);
@@ -46,5 +46,22 @@ function appendEvents() {
     eventsHtml.forEach(e => {
       $(".events-scrolling").append(e);
     });
+      
   });
 }
+
+/**
+ * Loads events from data/events.json and append all events to document (news page!)
+ */
+function appendEventsNews() {
+    $.getJSON("../data/events.json", function (events) {
+      // Convert events to HTML
+      const eventsHtml = events.map(eventToHtml);
+  
+      // Append events to document
+      eventsHtml.forEach(e => {
+          $(".events-container").append(e);
+        });
+        
+    });
+  }

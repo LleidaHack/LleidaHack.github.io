@@ -18,3 +18,8 @@ p {
   word-break: break-all;
   white-space: normal;
 }
+
+.events-container .card {
+    flex: 0 0 auto;
+    margin: 1em;
+}
