@@ -16,7 +16,7 @@ function eventToHtml(event) {
                   + date.getDate() + " de " + months[date.getMonth()] + " " + date.getFullYear();
 
   let html = `
-    <div class="card">
+    <div class="card" id="event-card" title="${event.name}">
       <div class="p-4" style="background-color: ${event.color}; border-radius: inherit">
         <img class="card-img-top" src="${event.image}" alt="Card image cap">
       </div>
@@ -65,3 +65,42 @@ function appendEventsNews() {
         
     });
   }
+
+  $(document).on("click", "div#event-card", function(){
+    const elemTitle = $(this).attr("title");
+
+    $.getJSON("../data/events.json", function (events) {
+      // Append events to document
+      events.forEach(e => {
+        if(e.name.localeCompare(elemTitle) === 0){
+          let id = e.name.replace(/\s/g, '');
+          if(!$("#".concat(id).concat(".modal")).length) {
+            let modal =
+            `
+            <div id="${id}" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">${e.name}</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>${e.description}</p>
+                      <img class="img-responsive" style="margin:0 auto; display:block;" src="${e.modalImage}" alt="${e.name}">
+                      <br>
+                      <a href="${e.seeMore}" target="_blank" >Más información en este enlace</a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              `;
+              $("body").append(modal);
+          }
+            $("#".concat(id)).modal();
+        }});
+        
+    });
+  });

@@ -4,45 +4,26 @@
     "date": "17-11-2017",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
     "image": "/img/events/HackepsLogo.png",
-    "color": "#ff8044"
+    "modalImage": "/img/events/hackeps2017Modal.PNG",
+    "color": "#ff8044",
+    "seeMore": "https://google.com"
   },
   {
     "name": "HackEPS2018",
     "date": "17-11-2018",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
     "image": "/img/events/HackepsLogo.png",
+    "modalImage": "/img/events/hackeps2018Modal.PNG",
     "color": "#18bc9c",
-    "seeMore": "https://google.com"
+    "seeMore": "https://lleidahack.github.io/hackeps2018/welcome"
   },
+
   {
     "name": "Charla DialogFlow",
     "date": "22-01-2018",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+    "description": "Nuestro compañero Guiller Orellana Trullos realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
     "image": "/img/events/XerradaDialogFlow.png",
-    "color": "#5f2493",
-    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
-  },
-  {
-    "name": "Charla DialogFlow",
-    "date": "22-01-2018",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
-    "image": "/img/events/XerradaDialogFlow.png",
-    "color": "#5f2493",
-    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
-  },
-  {
-    "name": "Charla DialogFlow",
-    "date": "22-01-2018",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
-    "image": "/img/events/XerradaDialogFlow.png",
-    "color": "#5f2493",
-    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
-  },
-  {
-    "name": "Charla DialogFlow",
-    "date": "22-01-2018",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
-    "image": "/img/events/XerradaDialogFlow.png",
+    "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
     "color": "#5f2493",
     "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
   }
