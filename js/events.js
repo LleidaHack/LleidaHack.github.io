@@ -1,19 +1,28 @@
 /**
- * Convert a member formated in JSON to HTML
- * @param {object} member Object containing member info
+ * Prettify event date
+ * @param {date} date  date to prettify
  */
-function eventToHtml(event) {
+function prettifyDates(uglyDate) {
   const days = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
   const months = ["enero", "febrero", "marzo", 
                   "abril", "mayo", "junio", 
                   "julio", "agosto", "septiembre", 
                   "octubre"," noviembre", "diciembre"];
 
-  // Prettify event date 
-  const splitDate = event.date.split("-")
+  const splitDate = uglyDate.split("-")
   const date = new Date(splitDate[2], splitDate[1] - 1, splitDate[0]);  
   const dateStr = days[date.getDay()] + ", " 
                   + date.getDate() + " de " + months[date.getMonth()] + " " + date.getFullYear();
+  return dateStr;
+}
+
+/**
+ * Convert a member formated in JSON to HTML
+ * @param {object} member Object containing member info
+ */
+function eventToHtml(event) {
+  
+  const dateStr = prettifyDates(event.date);
 
   let html = `
     <div class="card" id="event-card" title="${event.name}">
@@ -22,7 +31,7 @@ function eventToHtml(event) {
       </div>
       <div class="card-body">
         <p class="card-text text-left">${dateStr}</p>
-        <h4 class="card-title"><a>${event.name}</a></h4>
+        <h4 class="card-title">${event.name}</h4>
       `;
 
     // if (event.seeMore)
@@ -66,15 +75,19 @@ function appendEventsNews() {
     });
   }
 
+  /**
+   * Adds a modal based on the clicked event if the modal has been already added it won't
+   * do it again.
+   */
   $(document).on("click", "div#event-card", function(){
     const elemTitle = $(this).attr("title");
 
     $.getJSON("../data/events.json", function (events) {
-      // Append events to document
       events.forEach(e => {
         if(e.name.localeCompare(elemTitle) === 0){
           let id = e.name.replace(/\s/g, '');
           if(!$("#".concat(id).concat(".modal")).length) {
+            let dateStr = prettifyDates(e.date);
             let modal =
             `
             <div id="${id}" class="modal fade" role="dialog">
@@ -83,10 +96,12 @@ function appendEventsNews() {
                   <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">${e.name}</h4>
+                        <br>
+                        <p class="card-text text-left">${dateStr}</p>
                     </div>
                     <div class="modal-body">
                       <p>${e.description}</p>
-                      <img class="img-responsive" style="margin:0 auto; display:block;" src="${e.modalImage}" alt="${e.name}">
+                      <img class="img-responsive" src="${e.modalImage}" alt="${e.name}">
                       <br>
                       <a href="${e.seeMore}" target="_blank" >Más información en este enlace</a>
                     </div>

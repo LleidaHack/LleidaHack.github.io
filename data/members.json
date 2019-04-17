@@ -27,18 +27,10 @@
   ],
   "members": [
     {
-      "name": "Mark Ankaro",
-      "github": "https://github.com/markankaro",
-      "linkedin": "https://www.linkedin.com/in/marcmelis/",
-      "image": "https://avatars2.githubusercontent.com/u/28937427?s=400&v=4",
-      "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Marketing & Social Manager"
-    },
-    {
       "name": "Albert Sala",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/asm12/",
-      "image": "http://tiny.cc/ghsn1y",
+      "image": "https://www.linkedin.com/in/asm12/detail/photo/",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
       "status": "Marketing & Social Manager"
     },
@@ -51,19 +43,12 @@
       "status": "Marketing & Social Manager"
     },
     {
-      "name": "Marc Ribalta",
-      "github": "https://github.com/mrg20",
-      "linkedin": "https://www.linkedin.com/in/marc-ribalta-gene-240a2b140/",
-      "image": "https://avatars2.githubusercontent.com/u/17416452?s=400&v=4",
-      "status": "Marketing & Social Manager"
-    },
-    {
       "name": "Guillem Orellana",
       "github": "https://github.com/Guillem96",
       "linkedin": "https://www.linkedin.com/in/guillem-orellana-trullols-72a917148/",
       "image": "https://avatars3.githubusercontent.com/u/21279306?s=460&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Developer"
+      "status": "Desarrollador"
     },
     {
       "name": "Jordi Onrubia",
@@ -71,7 +56,7 @@
       "linkedin": "https://www.linkedin.com/in/jordirop/",
       "image": "https://avatars0.githubusercontent.com/u/17128072?s=400&v=4",
       "quote": "You can’t have great software without a great team, and most software teams behave like dysfunctional families. Jim McCarthy",
-      "status": "Developer & Public Relations"
+      "status": "Desarrollador/Relaciones Públicas"
     },
     {
       "name": "Oscar López",
@@ -79,7 +64,7 @@
       "linkedin": "",
       "image": "https://avatars0.githubusercontent.com/u/33825619?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Developer"
+      "status": "Desarrollador"
     },
     {
       "name": "Marcel Ortiz",
@@ -87,7 +72,7 @@
       "linkedin": "https://www.linkedin.com/in/marcel-ortiz-sanchez/",
       "image": "https://avatars3.githubusercontent.com/u/33465043?s=460&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Developer"
+      "status": "Desarrollador"
     },
     {
       "name": "Albert Merino",
@@ -95,7 +80,7 @@
       "linkedin": "https://www.linkedin.com/in/amerinoo/",
       "image": "https://avatars1.githubusercontent.com/u/11027833?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Developer"
+      "status": "Desarrollador"
     },
     {
       "name": "Marta Albets",
@@ -107,9 +92,9 @@
     },
     {
       "name": "Elena Barrachina",
-      "github": "",
+      "github": "https://github.com/Elena-Barrachina",
       "linkedin": "https://www.linkedin.com/in/elena-barrachina-i-ribes-33a047176/",
-      "image": "http://tiny.cc/wgsn1y",
+      "image": "https://avatars0.githubusercontent.com/u/35744161?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
       "status": "Relationship Manager"
     }

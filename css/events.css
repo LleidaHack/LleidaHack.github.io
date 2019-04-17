@@ -22,4 +22,17 @@ p {
 .events-container .card {
     flex: 0 0 auto;
     margin: 1em;
+    cursor: pointer;
+}
+
+.card-title {
+  font-weight: bold !important;
+  color: rgb(255, 136, 0);
+}
+
+.img-responsive {
+  margin:0 auto; 
+  display:block; 
+  max-width: 100%; 
+  height: auto;
 }
