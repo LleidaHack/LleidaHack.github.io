@@ -12,5 +12,8 @@ $(document).ready(function() {
   $("#members").load("../home/members.html", appendMembers); 
 
   // Load and append events chang to appendEvetnsMain when using news page
-  $("#events").load("../home/events.html", appendEventsNews); 
+  $("#events").load("../home/events.html", appendEventsNews);
+
+  // Load the footer
+  $("#contact-us").load("/shared/footer.html");
 });
