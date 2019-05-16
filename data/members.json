@@ -28,9 +28,9 @@
   "members": [
     {
       "name": "Albert Sala",
-      "github": "",
+      "github": "https://github.com/asm12",
       "linkedin": "https://www.linkedin.com/in/asm12/",
-      "image": "https://www.linkedin.com/in/asm12/detail/photo/",
+      "image": "https://avatars1.githubusercontent.com/u/36437907?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
       "status": "Marketing & Social Manager"
     },
@@ -48,7 +48,7 @@
       "linkedin": "https://www.linkedin.com/in/guillem-orellana-trullols-72a917148/",
       "image": "https://avatars3.githubusercontent.com/u/21279306?s=460&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Desarrollador"
+      "status": "Developer"
     },
     {
       "name": "Jordi Onrubia",
@@ -56,7 +56,7 @@
       "linkedin": "https://www.linkedin.com/in/jordirop/",
       "image": "https://avatars0.githubusercontent.com/u/17128072?s=400&v=4",
       "quote": "You can’t have great software without a great team, and most software teams behave like dysfunctional families. Jim McCarthy",
-      "status": "Desarrollador/Relaciones Públicas"
+      "status": "Developer & Public Relations"
     },
     {
       "name": "Oscar López",
@@ -64,7 +64,7 @@
       "linkedin": "",
       "image": "https://avatars0.githubusercontent.com/u/33825619?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Desarrollador"
+      "status": "Developer"
     },
     {
       "name": "Marcel Ortiz",
@@ -72,7 +72,7 @@
       "linkedin": "https://www.linkedin.com/in/marcel-ortiz-sanchez/",
       "image": "https://avatars3.githubusercontent.com/u/33465043?s=460&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Desarrollador"
+      "status": "Developer"
     },
     {
       "name": "Albert Merino",
@@ -80,7 +80,7 @@
       "linkedin": "https://www.linkedin.com/in/amerinoo/",
       "image": "https://avatars1.githubusercontent.com/u/11027833?s=400&v=4",
       "quote": "Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.",
-      "status": "Desarrollador"
+      "status": "Developer"
     },
     {
       "name": "Marta Albets",
