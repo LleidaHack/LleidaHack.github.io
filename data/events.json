@@ -17,10 +17,18 @@
     "color": "#18bc9c",
     "seeMore": "https://lleidahack.github.io/hackeps2018/welcome"
   },
-
   {
     "name": "Charla DialogFlow",
     "date": "22-01-2018",
+    "description": "Nuestro compañero Guiller Orellana Trullos realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
+    "image": "/img/events/XerradaDialogFlow.png",
+    "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
+    "color": "#5f2493",
+    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
+  },
+  {
+    "name": "Charla From Zero To Hero",
+    "date": "23-05-2019",
     "description": "Nuestro compañero Guiller Orellana Trullos realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
     "image": "/img/events/XerradaDialogFlow.png",
     "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
