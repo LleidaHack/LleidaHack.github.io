@@ -17,7 +17,7 @@
 }
 
 .members .team-member {
-  margin: 15px 0;
+  margin: 0px 0;
   padding: 0;
 }
 
@@ -30,10 +30,6 @@
 
 .members .team-member figure img {
   min-width: 100%;
-}
-
-.members .team-member figcaption p {
-  font-size: 16px;
 }
 
 .members .team-member figcaption ul {

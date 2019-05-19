@@ -11,13 +11,6 @@ function memberToHtml(member) {
     <div class="team-member">
       <figure>
         <img src="${member.image}" width="20" class="img-responsive">
-        <figcaption>
-          <p>${member.quote}</p>
-          <ul>
-            <li><a href="${member.github}"><i class="fab fa-github-alt"></i></a></li>
-            <li><a href="${member.linkedin}"><i class="fab fa-linkedin-in"></i></i></a></li>
-          </ul>
-        </figcaption>
       </figure>
       <h4>${member.name}</h4>
       <p>${role}</p>
@@ -26,41 +19,16 @@ function memberToHtml(member) {
 }
 
 /**
- * Convert a lord formated in JSON to HTML
- * @param {object} lord Object containing lord info
- * @returns {string} Html string
- */
-function lordToHtml(lord) {
-    return `
-    <div class="lord p-4 col-lg-4 col-md-4 col-sm-12">
-    <div class="team-member">
-      <figure>
-        <img src="${lord.image}" width="20" class="img-responsive">
-        <figcaption>
-          <p>${lord.quote}</p>
-          <ul>
-            <li class="p-3"><a href="${lord.github}"><i class="fab fa-github-alt fa-2x"></i></a></li>
-            <li class="p-3><a href="${lord.linkedin}"><i class="fab fa-linkedin-in fa-2x"></i></i></a></li>
-          </ul>
-        </figcaption>
-      </figure>
-      <h4>${lord.name}</h4>
-      <p>${lord.status}</p>
-    </div>
-    </div>`;
-}
-/**
  * Loads members from data/members.json, convert them into html format 
  * and append them to the document
  */
 function appendMembers() {
   $.getJSON("../data/members.json", function(members) {
     // Convert lords and simple members to HTML
-    const lordHtml = members.lords.map(lordToHtml);
     const membersHtml = members.members.map(memberToHtml);
 
     // Append members to document
-    lordHtml.concat(membersHtml).forEach(element => {
+    membersHtml.forEach(element => {
       $(".members-container").append(element);
     });
   });

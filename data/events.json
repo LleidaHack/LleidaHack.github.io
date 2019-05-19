@@ -1,35 +1,26 @@
 [
   {
     "name": "HackEPS2017",
-    "date": "17-11-2017",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+    "date": "18-11-2017",
+    "description": "El 18 y 19 de noviembre de 2017 la Escuela Politécnica Superior (EPS) de la Universidad de Lleida (UdL) vivió su primera hackathon organizada en Lleida, un evento donde el motor principal es el desarrollo colaborativo de software en 24 horas.<br /><br /> El grupo de estudiantes que después compondria la asociación LleidaHack con la colaboración de la EPS organizaron el evento con la asistencia de 65 participantes que resolverian los retos propuestos por las siguientes empresas: Semic, Motec Control, Xtrategics, Just Digital y BonÀrea.<br /><br />Para el posible desarrollo de esta Hackathon contamos con la colaboración de las siguientes empresas y/o entidades: Escuela Politécnica Superior UDL, Semic, BonÀrea, Motec Control, Just Digital, Xtrategics, Escuela Politécnica Superior UDL, Ayuntamiento de Lleida, Plusfrésc, Colegio de Ingenieros informáticos de Cataluña, Sosteca, Copisteria LowCost, Arfon Fruits, Pessic Aitona, Global Lleida, Domino's Pizza y IFusion Shop.",
     "image": "/img/events/HackepsLogo.png",
     "modalImage": "/img/events/hackeps2017Modal.PNG",
     "color": "#ff8044",
-    "seeMore": "https://google.com"
+    "seeMore": "http://www.eps.udl.cat/ca/noticies/Gran-exit-de-la-primera-hackathon-de-Lleida-aquest-cap-de-setmana-a-lEPS/"
   },
   {
     "name": "HackEPS2018",
     "date": "17-11-2018",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+    "description": "El 17 y 18 de noviembre de 2018 la Escuela Politécnica Superior (EPS) de la Universidad de Lleida (UdL) vivió su segunda hackathon organizada en Lleida, un evento donde el motor principal es el desarrollo colaborativo de software en 24 horas.<br /><br />Esta edición acogió a 90 personas que desarrollaron los productos de los retos propuestos por las empresas: Bon Area, Semic, Stratesys, Xtrategics y la Escuela Politécnica Superior.<br /><br />Para el posible desarrollo de esta Hackathon contamos con la colaboración de las siguientes empresas y/o entidades: Escuela Politécnica Superior UDL, Semic, BonÀrea, Stratesys, Xtrategics, Colegio de Ingenieros Informáticos de Cataluña, Intech3D, Plusfrésc, Alumni UDL, Domino's Pizza, Arfonfruits, JetBrains.",
     "image": "/img/events/HackepsLogo.png",
     "modalImage": "/img/events/hackeps2018Modal.PNG",
     "color": "#18bc9c",
-    "seeMore": "https://lleidahack.github.io/hackeps2018/welcome"
+    "seeMore": "http://www.eps.udl.cat/ca/noticies/La-segona-hackathon-de-Lleida-reuneix-un-centenar-de-programadors-a-lEPS/"
   },
   {
     "name": "Charla DialogFlow",
-    "date": "22-01-2018",
-    "description": "Nuestro compañero Guiller Orellana Trullos realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
-    "image": "/img/events/XerradaDialogFlow.png",
-    "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
-    "color": "#5f2493",
-    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
-  },
-  {
-    "name": "Charla From Zero To Hero",
-    "date": "23-05-2019",
-    "description": "Nuestro compañero Guiller Orellana Trullos realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
+    "date": "21-01-2019",
+    "description": "Nuestro compañero Guiller Orellana realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
     "image": "/img/events/XerradaDialogFlow.png",
     "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
     "color": "#5f2493",

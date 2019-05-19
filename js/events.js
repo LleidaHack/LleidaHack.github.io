@@ -3,7 +3,7 @@
  * @param {date} date  date to prettify
  */
 function prettifyDates(uglyDate) {
-  const days = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+  const days = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
   const months = ["enero", "febrero", "marzo", 
                   "abril", "mayo", "junio", 
                   "julio", "agosto", "septiembre", 
@@ -12,7 +12,7 @@ function prettifyDates(uglyDate) {
   const splitDate = uglyDate.split("-")
   const date = new Date(splitDate[2], splitDate[1] - 1, splitDate[0]);  
   const dateStr = days[date.getDay()] + ", " 
-                  + date.getDate() + " de " + months[date.getMonth()] + " " + date.getFullYear();
+                  + date.getDate()   + " de " + months[date.getMonth()] + " " + date.getFullYear();
   return dateStr;
 }
 
