@@ -21,9 +21,27 @@
     "name": "Charla DialogFlow",
     "date": "21-01-2019",
     "description": "Nuestro compañero Guiller Orellana realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
-    "image": "/img/events/XerradaDialogFlow.png",
+    "image": "/img/events/CharlaDialogFlow.png",
     "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
     "color": "#5f2493",
     "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
+  },
+  {
+    "name": "Womentechmakers",
+    "date": "28-03-2019",
+    "description": "Nuestra compañera Alba Lamas asistió al primer evento de WomanTechMakers organizado en Lleida por Google Developer Group Lleida, como mentora.<br />Durante el evento Alba a tenido tiempo de conversar con diferentes chicos de bachillerato sobre el papel de la mujer en el ambito tecnológico y como la sociedad influye en ambos sexos.",
+    "image": "/img/events/OutsideLleidaHack.png",
+    "modalImage": "/img/events/WomanTechMakersAlba.jfif",
+    "color": "#5f2493",
+    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6517130537302392832"
+  },
+  {
+    "name": "From Zero To Hero",
+    "date": "23-05-2019",
+    "description": "Lorem Ipsum BLABLABLABAL",
+    "image": "/img/events/FromZeroToHero.png",
+    "modalImage": "/img/events/FromZeroToHeroModal.png",
+    "color": "#5f2493",
+    "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6534758924439158785"
   }
 ]
