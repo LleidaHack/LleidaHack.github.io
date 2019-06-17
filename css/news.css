@@ -71,3 +71,11 @@
     color: rgb(66, 66, 66);
     font-size: 1.3em;
   }
+
+  .outside {
+    background-color: #D7263D;
+  }
+
+  .charla {
+    background-color: #2176AE;
+  }

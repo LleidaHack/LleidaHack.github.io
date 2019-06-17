@@ -23,7 +23,7 @@
     "description": "Nuestro compañero Guiller Orellana realizó un taller para los chicos y chicas de ESO y Bachillerato del instituto Samuel Gili y Gaya de Lleida sobre Chatbots, los alumnos y alumnas pudieron llevar la teoria que Guillem explicó a la práctica mediante la herramienta de Google DialogFlow!",
     "image": "/img/events/CharlaDialogFlow.png",
     "modalImage": "/img/events/XerradaDialogFlowModal.jfif",
-    "color": "#5f2493",
+    "color": "#2176AE",
     "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6496002879407685632"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Nuestra compañera Alba Lamas asistió al primer evento de WomanTechMakers organizado en Lleida por Google Developer Group Lleida, como mentora.<br />Durante el evento Alba ha tenido tiempo de conversar con diferentes chicos de bachillerato sobre el papel de la mujer en el ambito tecnológico y como la sociedad influye en ambos sexos.",
     "image": "/img/events/OutsideLleidaHack.png",
     "modalImage": "/img/events/WomanTechMakersAlba.jfif",
-    "color": "#5f2493",
+    "color": "#D7263D",
     "seeMore": "https://www.linkedin.com/feed/update/urn:li:activity:6517130537302392832"
   },
   {
@@ -41,7 +41,7 @@
     "description": "El el pasado 23 de mayo la asociación LleidaHack junto con la EPS organizó una charla dirigida a alumnos de ESO y bachillerato con interés en el mundo de la informática.<br/><br/> Con esta charla se dió una visión personal de lo que es estudiar la carrera de ingenieria informática y que los conocimientos que se adquieren no son solo aplicables al mundo profesional, aprovechando para desmentir muchos de los prejuicios que se tienen sobre esta carrera.",
     "image": "/img/events/FromZeroToHero.png",
     "modalImage": "/img/events/FromZeroToHeroModal.png",
-    "color": "#5f2493",
+    "color": "#2176AE",
     "seeMore": "http://www.eps.udl.cat/ca/noticies/Lleidahack-i-lEPS-ofereixen-una-xerrada-dorientacio-als-estudis-de-la-branca-informatica/"
   }
 ]
