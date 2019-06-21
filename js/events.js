@@ -46,7 +46,7 @@ function eventToHtml(event) {
 /**
  * Loads events from data/events.json and append all events to document (main page!)
  */
-function appendEventsMain() {
+function appendEventsScroll() {
   $.getJSON("../data/events.json", function (events) {
     // Convert events to HTML
     const eventsHtml = events.map(eventToHtml);
@@ -62,7 +62,7 @@ function appendEventsMain() {
 /**
  * Loads events from data/events.json and append all events to document (news page!)
  */
-function appendEventsNews() {
+function appendEventsRows() {
     $.getJSON("../data/events.json", function (events) {
       // Convert events to HTML
       const eventsHtml = events.map(eventToHtml);
