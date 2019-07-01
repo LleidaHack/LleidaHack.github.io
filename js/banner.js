@@ -4,8 +4,8 @@ function imageToCarouselHtml(imagePath) {
   const html = `
     <div class="carousel-item ${firstTime ? "active" : ""}">
     <div class="view">
-      <img class="w-100 h-100 mask-height-80" src="${imagePath}" alt="Second slide">
-      <div class="mask rgba-black-strong"></div>
+      <img class="w-100 h-100" src="${imagePath}" alt="Second slide">
+      <div class="mask rgba-black-strong mask-height-80"></div>
     </div>
   </div>`;
   firstTime = false;

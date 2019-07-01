@@ -48,7 +48,7 @@ h6 {
 }
 
 .banner-img {
-  width: 20em;
+  width: 40%;
   padding-top: 2em;
   position: absolute;
   top: 0;
@@ -60,7 +60,7 @@ h6 {
 }
 
 .mask-height-80 {
-  height: 80%;
+  height: 80% !important;
 }
 
 .title {
