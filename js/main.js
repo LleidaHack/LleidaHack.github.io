@@ -21,12 +21,9 @@ $(document).ready(function() {
 
 
 function loadEvents(media) {
-  console.log(media);
   if(media.matches){ 
-    console.log("IN IF");
     $("#events").load("../home/events.html", appendEventsScroll);
   }else{
-    console.log("IN ELSE");
   // Load and append events chang to appendEvetnsMain when using news page
     $("#events").load("../home/events.html", appendEventsRows);
   }

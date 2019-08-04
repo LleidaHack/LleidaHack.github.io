@@ -49,7 +49,7 @@ function eventToHtml(event) {
 function appendEventsScroll() {
   $.getJSON("../data/events.json", function (events) {
     // Convert events to HTML
-    const eventsHtml = events.map(eventToHtml);
+    const eventsHtml = events.reverse().map(eventToHtml);
 
     // Append events to document
     eventsHtml.forEach(e => {
@@ -65,7 +65,7 @@ function appendEventsScroll() {
 function appendEventsRows() {
     $.getJSON("../data/events.json", function (events) {
       // Convert events to HTML
-      const eventsHtml = events.map(eventToHtml);
+      const eventsHtml = events.reverse().map(eventToHtml);
   
       // Append events to document
       eventsHtml.forEach(e => {
@@ -88,7 +88,7 @@ function appendEventsRows() {
           let id = e.name.replace(/\s/g, '');
           if(!$("#".concat(id).concat(".modal")).length) {
             let dateStr = prettifyDates(e.date);
-            let modal =
+            let modalOpen =
             `
             <div id="${id}" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg">
@@ -99,11 +99,30 @@ function appendEventsRows() {
                         <br>
                         <p class="card-text text-left">${dateStr}</p>
                     </div>
-                    <div class="modal-body">
-                      <p>${e.description}</p>
+                    <div class="modal-body">`
+            let modalTopDescription = 
+            `
+                      <p>${e.topDescription}</p>
+            `
+            let modalPicture =
+            `
                       <img class="img-responsive" src="${e.modalImage}" alt="${e.name}">
+            `
+            let modalBottomDescription =
+            `
                       <br>
-                      <a href="${e.seeMore}" target="_blank" >Más información en este enlace</a>
+                      <p style="margin-bottom:0">${e.bottomDescription}</p>
+            `
+            console.log(e.seeMore);
+            let modalSeeMore =
+            `         <br>
+            `
+            e.seeMore.forEach(function(element){
+              modalSeeMore += `<a href="${element.url}" target="_blank">${element.text}</a>`
+            });
+                                  
+            let modalClose =
+            `
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -112,7 +131,12 @@ function appendEventsRows() {
                 </div>
               </div>
               `;
-              $("body").append(modal);
+            if(e.topDescription != ""){ modalOpen += modalTopDescription }
+            modalOpen += modalPicture
+            if(e.bottomDescription != ""){ modalOpen += modalBottomDescription }
+            if(e.seeMore != "") { modalOpen += modalSeeMore}
+            modalOpen += modalClose
+              $("body").append(modalOpen);
           }
             $("#".concat(id)).modal();
         }});
