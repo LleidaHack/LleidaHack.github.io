@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  
   // Load navbar
   $("#navbar").load("../shared/navbar.html"); 
   
@@ -22,9 +24,9 @@ $(document).ready(function() {
 
 function loadEvents(media) {
   if(media.matches){ 
-    $("#events").load("../home/events.html", appendEventsScroll);
+    $("#events").load("../home/events.html", appendEvents("horizontal"));
   }else{
-  // Load and append events chang to appendEvetnsMain when using news page
-    $("#events").load("../home/events.html", appendEventsRows);
+  // Load and append events chang to appendEventsMain when using news page
+    $("#events").load("../home/events.html", appendEvents("vertical"));
   }
 }

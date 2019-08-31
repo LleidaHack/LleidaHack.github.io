@@ -21,7 +21,6 @@ function prettifyDates(uglyDate) {
  * @param {object} member Object containing member info
  */
 function eventToHtml(event) {
-  
   const dateStr = prettifyDates(event.date);
 
   let html = `
@@ -44,36 +43,24 @@ function eventToHtml(event) {
 }
 
 /**
- * Loads events from data/events.json and append all events to document (main page!)
+ * Loads events from data/events.json and append all events to document.
  */
-function appendEventsScroll() {
-  $.getJSON("../data/events.json", function (events) {
-    // Convert events to HTML
-    const eventsHtml = events.reverse().map(eventToHtml);
-
+function appendEvents(position) {
+  var db = firebase.firestore();
+  db.collection("events").orderBy("order").get().then((querySnapshot) => {
+    const eventsHtml = querySnapshot.docs.map(doc => doc.data()).reverse().map(eventToHtml);
     // Append events to document
-    eventsHtml.forEach(e => {
-      $(".events-scrolling").append(e);
-    });
-      
+    if(position === "vertical"){
+      eventsHtml.forEach(e => {
+        $(".events-container").append(e);
+      });
+    }else{
+      eventsHtml.forEach(e => {
+        $(".events-scrolling").append(e);
+      });
+    }
   });
 }
-
-/**
- * Loads events from data/events.json and append all events to document (news page!)
- */
-function appendEventsRows() {
-    $.getJSON("../data/events.json", function (events) {
-      // Convert events to HTML
-      const eventsHtml = events.reverse().map(eventToHtml);
-  
-      // Append events to document
-      eventsHtml.forEach(e => {
-          $(".events-container").append(e);
-        });
-        
-    });
-  }
 
   /**
    * Adds a modal based on the clicked event if the modal has been already added it won't
