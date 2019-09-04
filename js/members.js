@@ -30,7 +30,6 @@ function appendMembers() {
   var db = firebase.firestore();
   db.collection("members").get().then((querySnapshot) => {
     const membersHtml = querySnapshot.docs.map(doc => doc.data()).map(memberToHtml);
-    console.log(membersHtml);
     // Append members to document
     for(i=0; i<membersHtml.length/4; i++) {
       var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);

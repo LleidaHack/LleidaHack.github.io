@@ -41,14 +41,15 @@ function eventToHtml(event) {
 
     return html;
 }
-
+var events;
 /**
  * Loads events from data/events.json and append all events to document.
  */
 function appendEvents(position) {
   var db = firebase.firestore();
   db.collection("events").orderBy("order").get().then((querySnapshot) => {
-    const eventsHtml = querySnapshot.docs.map(doc => doc.data()).reverse().map(eventToHtml);
+    events = querySnapshot.docs.map(doc => doc.data()).reverse();
+    const eventsHtml = events.map(eventToHtml);
     // Append events to document
     if(position === "vertical"){
       eventsHtml.forEach(e => {
@@ -68,65 +69,61 @@ function appendEvents(position) {
    */
   $(document).on("click", "div#event-card", function(){
     const elemTitle = $(this).attr("title");
-
-    $.getJSON("../data/events.json", function (events) {
-      events.forEach(e => {
-        if(e.name.localeCompare(elemTitle) === 0){
-          let id = e.name.replace(/\s/g, '');
-          if(!$("#".concat(id).concat(".modal")).length) {
-            let dateStr = prettifyDates(e.date);
-            let modalOpen =
-            `
-            <div id="${id}" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">${e.name}</h4>
-                        <br>
-                        <p class="card-text text-left">${dateStr}</p>
-                    </div>
-                    <div class="modal-body">`
-            let modalTopDescription = 
-            `
-                      <p>${e.topDescription}</p>
-            `
-            let modalPicture =
-            `
-                      <img class="img-responsive" src="${e.modalImage}" alt="${e.name}">
-            `
-            let modalBottomDescription =
-            `
+    events.forEach(function(event){
+      if(elemTitle === event.name) {
+        let id = event.name.replace(/\s/g, '');
+        if(!$("#".concat(id).concat(".modal")).length) {
+          let dateStr = prettifyDates(event.date);
+          let modalOpen =
+          `
+          <div id="${id}" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">${event.name}</h4>
                       <br>
-                      <p style="margin-bottom:0">${e.bottomDescription}</p>
-            `
-            console.log(e.seeMore);
-            let modalSeeMore =
-            `         <br>
-            `
-            e.seeMore.forEach(function(element){
-              modalSeeMore += `<a href="${element.url}" target="_blank">${element.text}</a>`
-            });
-                                  
-            let modalClose =
-            `
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
+                      <p class="card-text text-left">${dateStr}</p>
+                  </div>
+                  <div class="modal-body">`
+          let modalTopDescription = 
+          `
+                    <p>${event.topDescription}</p>
+          `
+          let modalPicture =
+          `
+                    <img class="img-responsive" src="${event.modalImage}" alt="${event.name}">
+          `
+          let modalBottomDescription =
+          `
+                    <br>
+                    <p style="margin-bottom:0">${event.bottomDescription}</p>
+          `
+          let modalSeeMore =
+          `         <br>
+          `
+          event.seeMore.forEach(function(element){
+            modalSeeMore += `<a href="${element.url}" target="_blank">${element.text}</a>`
+          });
+                                
+          let modalClose =
+          `
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
-              `;
-            if(e.topDescription != ""){ modalOpen += modalTopDescription }
-            modalOpen += modalPicture
-            if(e.bottomDescription != ""){ modalOpen += modalBottomDescription }
-            if(e.seeMore != "") { modalOpen += modalSeeMore}
-            modalOpen += modalClose
-              $("body").append(modalOpen);
-          }
-            $("#".concat(id)).modal();
-        }});
-        
+            </div>
+            `;
+          if(event.topDescription != ""){ modalOpen += modalTopDescription }
+          modalOpen += modalPicture
+          if(event.bottomDescription != ""){ modalOpen += modalBottomDescription }
+          if(event.seeMore != "") { modalOpen += modalSeeMore}
+          modalOpen += modalClose
+            $("body").append(modalOpen);
+        }
+          $("#".concat(id)).modal();
+      }
     });
   });
