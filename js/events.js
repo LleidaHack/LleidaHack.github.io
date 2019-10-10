@@ -26,7 +26,7 @@ function eventToHtml(event) {
   let html = `
     <div class="card" id="event-card" title="${event.name}">
       <div class="p-4" style="background-color: ${event.color}; border-radius: inherit">
-        <img class="card-img-top" src="${event.image}" alt="Card image cap">
+        <img class="card-img-top" src="${event.image}" alt="${event.name}-image">
       </div>
       <div class="card-body">
         <p class="card-text text-left">${dateStr}</p>
