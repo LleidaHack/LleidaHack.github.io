@@ -10,7 +10,7 @@ function memberToHtml(member) {
     <div class="p-1 col-lg-3 col-md-3 col-sm-6 col-6">
     <div class="team-member">
       <figure>
-        <img src="${member.image}" width="20" class="img-responsive">
+        <img src="${member.image}" width="20" class="img-responsive" alt="${member.name}-photo">
       </figure>
       <h4>${member.name}</h4>
       <p>${role}</p>
