@@ -69,6 +69,7 @@ function appendEvents(position) {
    * do it again.
    */
   $(document).on("click", "div#event-card", function(){
+    console.log("ONCLICK");
     const elemTitle = $(this).attr("title");
     events.forEach(function(event){
       var eventName = event.name.replace("<br>", " ");
