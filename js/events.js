@@ -74,9 +74,9 @@ function appendEvents(position) {
     events.forEach(function(event){
       var eventName = event.name.replace("<br>", " ");
       if(elemTitle === eventName) {
-        let id = event.name.replace(/\s/g, '');
+        let id = id.replace("<br>", " ");
         console.log(id);
-        id = id.replace("<br>", " ");
+        id = event.name.replace(/\s/g, '');
         console.log(id);
         if(!$("#".concat(id).concat(".modal")).length) {
           let dateStr = prettifyDates(event.date);
