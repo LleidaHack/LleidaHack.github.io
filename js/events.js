@@ -22,15 +22,16 @@ function prettifyDates(uglyDate) {
  */
 function eventToHtml(event) {
   const dateStr = prettifyDates(event.date);
-
+  var eventName = event.name.replace("br", " ");
+  
   let html = `
-    <div class="card" id="event-card" title="${event.name}">
+    <div class="card" id="event-card" title="${eventName}">
       <div class="p-4" style="background-color: ${event.color}; border-radius: inherit">
-        <img class="card-img-top" src="${event.image}" alt="${event.name}-image">
+        <img class="card-img-top" src="${event.image}" alt="${eventName}-image">
       </div>
       <div class="card-body">
         <p class="card-text text-left">${dateStr}</p>
-        <h4 class="card-title">${event.name}</h4>
+        <h4 class="card-title">${eventName}</h4>
       `;
 
     // if (event.seeMore)
