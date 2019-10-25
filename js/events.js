@@ -31,7 +31,7 @@ function eventToHtml(event) {
       </div>
       <div class="card-body">
         <p class="card-text text-left">${dateStr}</p>
-        <h4 class="card-title">${eventName}</h4>
+        <h4 class="card-title">${event.name}</h4>
       `;
 
     // if (event.seeMore)
