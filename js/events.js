@@ -73,6 +73,9 @@ function appendEvents(position) {
     events.forEach(function(event){
       if(elemTitle === event.name) {
         let id = event.name.replace(/\s/g, '');
+        console.log(id);
+        id = id.replace("<br>", " ");
+        console.log(id);
         if(!$("#".concat(id).concat(".modal")).length) {
           let dateStr = prettifyDates(event.date);
           let modalOpen =
