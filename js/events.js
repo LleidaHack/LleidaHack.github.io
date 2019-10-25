@@ -22,7 +22,7 @@ function prettifyDates(uglyDate) {
  */
 function eventToHtml(event) {
   const dateStr = prettifyDates(event.date);
-  var eventName = event.name.replace("br", " ");
+  var eventName = event.name.replace("<br>", " ");
   
   let html = `
     <div class="card" id="event-card" title="${eventName}">
