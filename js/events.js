@@ -69,13 +69,11 @@ function appendEvents(position) {
    * do it again.
    */
   $(document).on("click", "div#event-card", function(){
-    console.log("ONCLICK");
     const elemTitle = $(this).attr("title");
     events.forEach(function(event){
       var eventName = event.name.replace("<br>", " ");
       if(elemTitle === eventName) {
         let id = eventName.replace(/\s/g, '');
-        console.log(id);
         if(!$("#".concat(id).concat(".modal")).length) {
           let dateStr = prettifyDates(event.date);
           let modalOpen =
@@ -85,7 +83,7 @@ function appendEvents(position) {
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
-                      <h4 class="modal-title">${event.name}</h4>
+                      <h4 class="modal-title">${eventName}</h4>
                       <br>
                       <p class="card-text text-left">${dateStr}</p>
                   </div>
