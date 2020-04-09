@@ -48,7 +48,7 @@ var events;
  */
 function appendEvents(position) {
   var db = firebase.firestore();
-  db.collection("events").get().then((querySnapshot) => {
+  db.collection("events").orderBy("order").get().then((querySnapshot) => {
     events = querySnapshot.docs.map(doc => doc.data()).reverse();
     const eventsHtml = events.map(eventToHtml);
     // Append events to document
