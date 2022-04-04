@@ -33,7 +33,7 @@ function appendMembers() {
     const membersHtml = members.map(memberToHtml);
     // Append members to document
     for(i=0; i<membersHtml.length/4; i++) {
-      var rowMemberContainer = $.parseHTML(`<div class="members-container-${id} row justify-content-md-center"></div>`);
+      var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
       $("#pre-events-container").append(rowMemberContainer);
     }
     membersHtml.forEach(function(element, index) {
