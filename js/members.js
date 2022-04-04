@@ -31,19 +31,15 @@ function appendMembers() {
   db.collection("members").get().then((querySnapshot) => {
     const members = querySnapshot.docs.map(doc => doc.data());
     const membersHtml = members.map(memberToHtml);
-    var i=0;
     // Append members to document
-    for(i=0;i<3;i++){
-      var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
-      $("#pre-events-container").append(rowMemberContainer);
-    }
-    /*for(i=3; i<membersHtml.length/4; i++) {
+    for(i=0; i<membersHtml.length/4; i++) {
       var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
       $("#pre-events-container").append(rowMemberContainer);
       //if (first==3)
-    }*/
+    }
     membersHtml.forEach(function(element, index) {
       var num = Math.floor((index)/4);
+      if (index>2)index++;
       var membersContainer = ('.members-container-'.concat(num));
       $(membersContainer).append(element);
     });
