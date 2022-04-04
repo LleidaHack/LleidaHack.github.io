@@ -33,13 +33,14 @@ function appendMembers() {
     const membersHtml = members.map(memberToHtml);
     // Append members to document
     for(i=0; i<membersHtml.length/4; i++) {
-      var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
+      var id = i;
+      if (id>2)id++;
+      var rowMemberContainer = $.parseHTML(`<div class="members-container-${id} row justify-content-md-center"></div>`);
       $("#pre-events-container").append(rowMemberContainer);
       //if (first==3)
     }
     membersHtml.forEach(function(element, index) {
       var num = Math.floor((index)/4);
-      if (index>2)index++;
       var membersContainer = ('.members-container-'.concat(num));
       $(membersContainer).append(element);
     });
