@@ -37,8 +37,8 @@ function appendMembers() {
       $("#pre-events-container").append(rowMemberContainer);
     }
     membersHtml.forEach(function(element, index) {
+      if (index>2)index++;
       var num = Math.floor((index)/4);
-      if (index>2)num++;
       var membersContainer = ('.members-container-'.concat(num));
       $(membersContainer).append(element);
     });
