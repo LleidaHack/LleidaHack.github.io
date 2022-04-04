@@ -33,11 +33,11 @@ function appendMembers() {
     const membersHtml = members.map(memberToHtml);
     var i=0;
     // Append members to document
-    for(i=0;i<4;i++){
+    for(i=0;i<3;i++){
       var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
       $("#pre-events-container").append(rowMemberContainer);
     }
-    for(i=4; i<membersHtml.length/4; i++) {
+    for(i=3; i<membersHtml.length/4; i++) {
       var rowMemberContainer = $.parseHTML(`<div class="members-container-${i} row justify-content-md-center"></div>`);
       $("#pre-events-container").append(rowMemberContainer);
       //if (first==3)
